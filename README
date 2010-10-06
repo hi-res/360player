@@ -1,0 +1,15 @@
+A 360 degree video player written in AS3 using the Papervision 3D library.
+The code also allows for a second video to be played at the bottom of the sphere.
+
+The final product was used on Doritos Late Night:
+http://doritoslatenight.com
+
+The included video sample is from our test shoot using a LadyBug camera:
+http://www.ptgrey.com/index.asp
+
+Papervision3D:
+http://papervision3d.org/
+http://code.google.com/p/papervision3d/downloads/list
+
+Also uses TweenLite class:
+https://greensock.com/tweenlite/
