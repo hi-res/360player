@@ -69,10 +69,9 @@ package  {
 		}
 
 		private function loop3D(event : Event) : void {
-			_mouse360.update();
 
-			camera.rotationX -= _mouse360.displace.x;
-			camera.rotationY -= _mouse360.displace.y;
+			camera.rotationX += _mouse360.rotate.x;
+			camera.rotationY += _mouse360.rotate.y;
 
 			// max rotation up
 			if (camera.rotationX < -90)
@@ -81,8 +80,8 @@ package  {
 			if (camera.rotationX > 90)
 				camera.rotationX = 90;
 
-			_mouse360.slow();
-
+			_mouse360.update();
+			
 			_bitmapData.draw(_video, _videoMatrix);
 
 			if (_drawBottom) {
@@ -106,7 +105,7 @@ package  {
 		}
 
 		private function init() : void {
-			_mouse360 = new Mouse360(stage);
+			addChild(_mouse360 = new Mouse360());
 
 			var nc : NetConnection = new NetConnection();
 			nc.connect(null);
