@@ -1,8 +1,14 @@
 A 360 degree video player written in AS3 using the Papervision 3D library.
 The code also allows for a second video to be played at the bottom of the sphere.
 
+- Click and drag to rotate camera
+- Use up/down arrows to zoom in and out
+
 The final product was used on Doritos Late Night:
 http://doritoslatenight.com
+
+A live demo of this project can be viewed at:
+http://clients.hi-res.net/labs/360player/
 
 The included video sample is from our test shoot using a LadyBug camera:
 http://www.ptgrey.com/index.asp

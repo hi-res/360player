@@ -38,6 +38,7 @@ package {
 			arShape.graphics.lineTo(w, - w);
 			arShape.graphics.moveTo(0, 0);
 			arShape.graphics.lineTo(-w, - w);
+			visible = false;
 		}
 
 		private function drawArrow() : void {
