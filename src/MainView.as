@@ -115,6 +115,8 @@ package  {
 				if(_videoWidth != 0) return;
 				_videoWidth = o.width;
 				_videoHeight = o.height;
+				_videoMatrix.scale(-1, 1);
+				_videoMatrix.translate(320, 0);
 				_videoMatrix.scale(_videoWidth / 320, _videoHeight / 240);
 				init3D();
 			};
